@@ -11,6 +11,7 @@ export default function Search() {
         let timeout;
         if(timeout){
             clearTimeout(timeout);
+            return;
         }
         timeout=setTimeout(()=>{
             dispatch(selectQuery(e.target.value));

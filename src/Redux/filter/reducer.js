@@ -13,20 +13,16 @@ function filterReducer(state=initialState, action){
             ...state,
             category: action.payload,
             author: '',
-            query: ''
         }
     }else if(action.type === SELECTAUTHOR){
         return {
             ...state,
             author: action.payload,
             category: '',
-            query: ''
         }
     }else if(action.type === SELECTQUERY){
         return {
             ...state,
-            author: '',
-            category: '',
             query: action.payload
         }
     }
